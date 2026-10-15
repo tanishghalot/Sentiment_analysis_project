@@ -12,7 +12,7 @@ st.set_page_config(
 # Load trained files
 @st.cache_resource
 def load_model():
-    model = joblib.load("sentiment_Analysis.pkl")
+    model = joblib.load("Sentiment_Analysis.pkl")
     tfidf = joblib.load("tfidf.pkl")
     nlp = spacy.load("en_core_web_sm")
     return model, tfidf, nlp
