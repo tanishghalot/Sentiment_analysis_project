@@ -3,7 +3,7 @@ import joblib
 import spacy
 from thinc.layers import premap_ids
 
-model = joblib.load('sentiment_Analysis.pkl')
+model = joblib.load('Sentiment_Analysis.pkl')
 tfidf  = joblib.load("tfidf.pkl")
 
 st.title("sentiment Analysis App")
